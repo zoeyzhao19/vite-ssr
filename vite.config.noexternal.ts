@@ -5,10 +5,7 @@ import config from './vite.config'
  */
 export default Object.assign(config, {
   ssr: {
-    noExternal: [
-      // this package has uncompiled .vue files
-      'example-external-component'
-    ]
+    noExternal: ['example-external-component']
   },
   
   resolve: {
